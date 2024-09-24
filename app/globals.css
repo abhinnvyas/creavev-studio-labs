@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Primary: Electric Blue – for buttons, headers, and links.
+Secondary: Vibrant Teal – for hover states, icons, and subheadings.
+Accent: Lime Green – for key actions and highlights.
+Background: Light Grey – for the main background.
+Foreground: Midnight Navy – for text and essential content. */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0e10;
+  --foreground: #ffffff;
+  --primary: #4a90e2;
+  --font-roboto: "Roboto", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Change these colors if the system is in dark mode ( I am leaving it the same as the root ) */
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f2f2f2;
+    --foreground: #172b4d;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .light {
+    font-weight: 300; /* Light */
+  }
+
+  .regular {
+    font-weight: 400; /* Regular */
+  }
+
+  .bold {
+    font-weight: 700; /* Bold */
   }
 }

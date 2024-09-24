@@ -11,6 +11,20 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+      },
+      keyframes: {
+        // float: {
+        //   "0%, 100%": { transform: "translateY(0)" },
+        //   "50%": { transform: "translateY(-10px)" },
+        // },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
+      animation: {
+        float: "float 3s ease-in-out infinite",
       },
     },
   },
